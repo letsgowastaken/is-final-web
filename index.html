@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jake Stevens — Sales &amp; Entrepreneurship</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#0e1620; --panel:#16222f; --line:#233444;
+      --glow:#f0a04b; --glow-soft:#f7c98b; --text:#dde6ee; --muted:#93a4b5;
+    }
+    body{background:var(--ink); color:var(--text); font-family:'Inter',system-ui,sans-serif;}
+    h1,h2,h3,.navbar-brand{font-family:'Archivo',sans-serif;}
+    .navbar{background:rgba(14,22,32,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+    .navbar-brand{font-weight:900; letter-spacing:.04em; color:var(--glow)!important;}
+    .nav-link{color:var(--muted)!important; font-weight:500;}
+    .nav-link:hover{color:var(--glow)!important;}
+    /* signature: warm "permanent lighting" glow line across the hero */
+    .hero{padding:7rem 0 5rem; position:relative; overflow:hidden;}
+    .hero::after{content:""; position:absolute; left:0; right:0; top:0; height:3px;
+      background:linear-gradient(90deg,transparent, var(--glow) 20%, var(--glow-soft) 50%, var(--glow) 80%, transparent);
+      box-shadow:0 0 38px 10px rgba(240,160,75,.35);}
+    .hero h1{font-weight:900; font-size:clamp(2.4rem,5vw,4rem); line-height:1.05;}
+    .hero h1 span{color:var(--glow);}
+    .lede{color:var(--muted); font-size:1.15rem; max-width:38rem;}
+    .headshot{width:200px; height:200px; object-fit:cover; border-radius:14px;
+      border:1px solid var(--line); box-shadow:0 14px 40px rgba(0,0,0,.45), 0 0 0 4px rgba(240,160,75,.12);}
+    .stat{font-family:'Archivo'; font-weight:900; font-size:2rem; color:var(--glow);}
+    .stat-label{color:var(--muted); font-size:.85rem; text-transform:uppercase; letter-spacing:.08em;}
+    .card-dark{background:var(--panel); border:1px solid var(--line); border-radius:12px; height:100%;}
+    .card-dark .card-title{color:var(--glow-soft); font-family:'Archivo'; font-weight:700;}
+    .card-dark .card-text{color:var(--muted);}
+    .badge-skill{background:transparent; border:1px solid var(--line); color:var(--text);
+      font-weight:500; padding:.45em .8em; border-radius:999px;}
+    .btn-glow{background:var(--glow); color:#1a1208; font-weight:700; border:none;}
+    .btn-glow:hover{background:var(--glow-soft); color:#1a1208;}
+    .btn-line{border:1px solid var(--line); color:var(--text);}
+    .btn-line:hover{border-color:var(--glow); color:var(--glow);}
+    .card-img{width:100%;height:190px;object-fit:cover;border-radius:8px;margin-bottom:1rem;border:1px solid var(--line);}
+    .btn-card{border:1px solid var(--glow);color:var(--glow);font-weight:600;margin-top:auto;}
+    .btn-card:hover{background:var(--glow);color:#1a1208;}
+    .about-photo{width:100%;border-radius:12px;border:1px solid var(--line);box-shadow:0 14px 40px rgba(0,0,0,.45);}
+    .photo-cap{color:var(--muted);font-size:.85rem;margin-top:.5rem;}
+    section{padding:4.5rem 0;}
+    .section-kicker{color:var(--glow); text-transform:uppercase; letter-spacing:.14em; font-weight:600; font-size:.8rem;}
+    footer{border-top:1px solid var(--line); color:var(--muted);}
+    a.icon-link{color:var(--muted); font-size:1.4rem;}
+    a.icon-link:hover{color:var(--glow);}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">JAKE STEVENS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ventures">Ventures</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-8">
+        <p class="section-kicker mb-2">Provo, Utah · BYU Marriott School</p>
+        <h1>I build revenue.<br>From <span>cold call</span> to closed deal.</h1>
+        <p class="lede mt-3">Information Systems student at BYU and two-time founder. I co-built a
+          permanent lighting company to six figures in year one, personally closing roughly a third
+          of its deals — and I'm headed for enterprise SaaS sales.</p>
+        <div class="mt-4 d-flex gap-3">
+          <a class="btn btn-glow btn-lg" href="resume.html">View résumé</a>
+          <a class="btn btn-line btn-lg" href="https://www.linkedin.com/in/jacobstevens-sdr/" target="_blank" rel="noopener">
+            <i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+          <a class="btn btn-line btn-lg" href="https://www.instagram.com/jacobstev22/" target="_blank" rel="noopener">
+            <i class="bi bi-instagram me-2"></i>Instagram</a>
+        </div>
+      </div>
+      <div class="col-lg-4 text-lg-end text-center">
+        <img src="images/headshot.jpg" alt="Jake Stevens headshot" class="headshot">
+      </div>
+    </div>
+    <div class="row mt-5 g-4">
+      <div class="col-6 col-md-3"><div class="stat">$220K</div><div class="stat-label">Year-one revenue, Luma</div></div>
+      <div class="col-6 col-md-3"><div class="stat">~35%</div><div class="stat-label">Of deals personally closed</div></div>
+      <div class="col-6 col-md-3"><div class="stat">2</div><div class="stat-label">Companies founded</div></div>
+      <div class="col-6 col-md-3"><div class="stat">7.2M</div><div class="stat-label">Views, top YouTube video</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <p class="section-kicker">About</p>
+    <h2 class="mb-4">Seller first. Builder always.</h2>
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <p class="lede">I'm a sophomore studying Information Systems at BYU's Marriott School of Business.
+          Before that, I spent two years on a service mission in Peru, where I became fluent in Spanish
+          and learned to knock on doors that don't want to open.</p>
+        <p class="lede">Since then I've co-founded Luma Permanent Lighting and founded Aura Automation,
+          an AI voice-receptionist agency for home-service businesses. My long-term track is enterprise
+          SaaS sales — SDR to AE — pairing a technical IS foundation with proven closing ability.</p>
+      </div>
+      <div class="col-lg-5">
+        <img src="images/luma-handshake.jpg" alt="Jake closing a deal with Luma Permanent Lighting customers" class="about-photo mb-2">
+        <p class="photo-cap mb-4">Closing in the field with the Luma crew.</p>
+        <ul class="list-unstyled lede">
+          <li class="mb-2"><i class="bi bi-mortarboard me-2" style="color:var(--glow)"></i>BYU Marriott, Information Systems</li>
+          <li class="mb-2"><i class="bi bi-translate me-2" style="color:var(--glow)"></i>Fluent Spanish (2-year mission, Peru)</li>
+          <li class="mb-2"><i class="bi bi-award me-2" style="color:var(--glow)"></i>Eagle Scout</li>
+          <li class="mb-2"><i class="bi bi-heart-pulse me-2" style="color:var(--glow)"></i>Marathon finisher</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ventures" style="background:var(--panel)">
+  <div class="container">
+    <p class="section-kicker">Ventures</p>
+    <h2 class="mb-4">What I've built</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-dark p-4 d-flex flex-column">
+          <img src="images/luma-job.jpg" alt="Finished Luma permanent lighting installation at night" class="card-img">
+          <h3 class="card-title h5">Luma Permanent Lighting</h3>
+          <p class="card-text">Co-founder. Permanent exterior lighting for Utah homes. ~$220K revenue
+            in year one at a $4,500 average ticket; built the lead-gen stack (Meta ads, CRM automation,
+            SMS compliance) and closed in-home.</p>
+          <a class="btn btn-card" href="https://lumalightco.com/" target="_blank" rel="noopener">Visit lumalightco.com <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-dark p-4 d-flex flex-column">
+          <h3 class="card-title h5">Aura Automation</h3>
+          <p class="card-text">Founder. AI voice receptionists for plumbers, HVAC, and med spas —
+            built on GoHighLevel with cold email and cold call outbound. Registered Utah LLC.
+            Designed, built, and deployed the company site myself.</p>
+          <a class="btn btn-card" href="https://auraautomation.co/" target="_blank" rel="noopener">Visit auraautomation.co <i class="bi bi-box-arrow-up-right ms-1"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-dark p-4 d-flex flex-column">
+          <img src="images/youtube-channel.jpg" alt="LetsGo YouTube channel with 44.6K subscribers" class="card-img" style="object-position:top">
+          <h3 class="card-title h5">YouTube Channel — LetsGo</h3>
+          <p class="card-text">Grew a gaming and setup channel to 44.6K subscribers, with a top video
+            at 7.2M views — an early lesson in audience, retention, and packaging.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <p class="section-kicker">Skills</p>
+    <h2 class="mb-4">Toolkit</h2>
+    <div class="d-flex flex-wrap gap-2">
+      <span class="badge-skill">Cold calling &amp; outbound</span>
+      <span class="badge-skill">In-home / B2B closing</span>
+      <span class="badge-skill">Spanish (fluent)</span>
+      <span class="badge-skill">Python &amp; pandas</span>
+      <span class="badge-skill">SQL</span>
+      <span class="badge-skill">Tableau</span>
+      <span class="badge-skill">Web scraping</span>
+      <span class="badge-skill">GoHighLevel CRM</span>
+      <span class="badge-skill">Meta Ads</span>
+      <span class="badge-skill">Cold email (Smartlead)</span>
+      <span class="badge-skill">HTML / CSS</span>
+    </div>
+  </div>
+</section>
+
+<footer class="py-4">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
+    <span>© 2026 Jake Stevens</span>
+    <span class="d-flex gap-3">
+      <a class="icon-link" href="https://www.linkedin.com/in/jacobstevens-sdr/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a class="icon-link" href="https://www.instagram.com/jacobstev22/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a class="icon-link" href="resume.html" aria-label="Résumé"><i class="bi bi-file-earmark-person"></i></a>
+    </span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

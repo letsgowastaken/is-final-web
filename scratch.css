@@ -1,0 +1,76 @@
+/* scratch.css — hand-written stylesheet for the from-scratch page (no Bootstrap) */
+
+/* 1. Custom background color on the whole page + base font family/color */
+body {
+  background-color: #181818;            /* custom background color */
+  color: #f2f2f2;                       /* font color */
+  font-family: Verdana, Geneva, sans-serif;  /* font family */
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 2. Headings use a different font family and the Spikeball yellow font color */
+h1, h2 {
+  font-family: "Arial Black", Arial, sans-serif;
+  color: #ffd100;
+  letter-spacing: 1px;
+}
+
+/* 3. Top navigation bar */
+.topnav {
+  background-color: #ffd100;
+  padding: 14px 24px;
+  position: sticky;
+  top: 0;
+}
+.topnav a {
+  color: #181818;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 22px;
+}
+.topnav a:hover { text-decoration: underline; }
+
+/* 4. Div used to center and constrain the main content block */
+.wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* 5. Div styled as a highlighted card section */
+.card {
+  background-color: #232323;
+  border-left: 6px solid #ffd100;
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin: 28px 0;
+}
+
+/* 6. Div used as a footer block */
+.footer {
+  background-color: #111;
+  color: #9a9a9a;
+  text-align: center;
+  padding: 24px;
+  margin-top: 40px;
+}
+.footer a { color: #ffd100; }
+
+/* 7. Images and embeds scale to fit */
+img, iframe { max-width: 100%; border-radius: 8px; }
+
+/* 8. Lists */
+ol > li { margin-bottom: 10px; }
+ul li { color: #cfcfcf; }
+
+/* 9. Back-to-top link styled as a button */
+.top-link {
+  display: inline-block;
+  background-color: #ffd100;
+  color: #181818;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
