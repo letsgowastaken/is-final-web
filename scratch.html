@@ -18,6 +18,7 @@
 <a href="#champ">Championship</a>
 <a href="#video">Video</a>
 <a href="#data">Data</a>
+<a href="#game">Play my game</a>
 </nav>
 
 <!-- div #1: page wrapper -->
@@ -75,12 +76,23 @@ allowfullscreen></iframe>
 <h2>Live Tableau visualization</h2>
 <p>Sports are better with data. Here's a live, interactive Tableau dashboard
 (Tableau's public storm-tracking sample — click around, it responds):</p>
+<div class="tableau-wrap">
 <tableau-viz id="tableauViz"
 src="https://public.tableau.com/views/RegionalSampleWorkbook/Storms"
 toolbar="bottom" hide-tabs>
 </tableau-viz>
+</div>
 <script type="module"
 src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+</div>
+
+<!-- Web app / game card: easy access to my from-scratch game -->
+<div class="card game-card" id="game">
+<h2>Play my game &#127918;</h2>
+<p>I built a single-page browser game in collaboration with AI: a third-person
+battle royale where it's you versus the bots — last one standing wins. Loot weapons,
+crack open chests, and survive.</p>
+<p><a class="game-link" href="game.html">▶ Launch the game</a></p>
 </div>
 
 <!-- on-page anchor link back to the top -->
