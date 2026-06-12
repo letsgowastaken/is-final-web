@@ -2,9 +2,9 @@
 
 /* 1. Custom background color on the whole page + base font family/color */
 body {
-  background-color: #181818;            /* custom background color */
-  color: #f2f2f2;                       /* font color */
-  font-family: Verdana, Geneva, sans-serif;  /* font family */
+  background-color: #181818; /* custom background color */
+  color: #f2f2f2;            /* font color */
+  font-family: Verdana, Geneva, sans-serif; /* font family */
   margin: 0;
   line-height: 1.6;
 }
@@ -74,3 +74,39 @@ ul li { color: #cfcfcf; }
   font-weight: bold;
   text-decoration: none;
 }
+
+/* 10. Make the live Tableau dashboard tall enough to fit and stay interactive */
+.tableau-wrap {
+  width: 100%;
+  height: 820px;
+  margin-top: 12px;
+}
+.tableau-wrap tableau-viz,
+#tableauViz {
+  display: block;
+  width: 100%;
+  height: 820px;
+}
+/* On smaller screens, give it a sensible minimum height */
+@media (max-width: 700px) {
+  .tableau-wrap,
+  .tableau-wrap tableau-viz,
+  #tableauViz {
+    height: 640px;
+  }
+}
+
+/* 11. Game card + launch button */
+.game-card p { color: #e8e8e8; }
+.game-link {
+  display: inline-block;
+  background-color: #ffd100;
+  color: #181818;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  text-decoration: none;
+  margin-top: 6px;
+}
+.game-link:hover { background-color: #ffe355; }
